@@ -3,6 +3,7 @@
   margin: 0px 0px;
   font-family: cursive;
   box-sizing: border-box;
+  text-decoration: none;
 }
 
 .main-wrapper{
@@ -24,7 +25,7 @@
   margin-top: 250px;
 }
 
-a {
+.scroll-button{
   position: absolute;
   bottom: 20px;
   left: 50%;
@@ -158,6 +159,15 @@ html {
 .page1-contents{
   height: 80%;
   width: 100%;
+}
+.page1-content{
+  display: inline-block;
+  width: 100%;
+  font-size: 11vw;
+  font-weight: bold;
+  color: #FFF;
+  padding-left: 8vw;
+  margin-bottom: 20px;
 }
 
 
