@@ -105,7 +105,64 @@ a span::before {
     opacity: 0;
   }
 }
-.next-contents{
-  height: 300px;
-  background: tomato;
+
+/*画面全体の設定*/
+body,
+html {
+  height: 100%;
+  margin: 0 auto;
+  letter-spacing: 2px;
+  font-size: 10px;
+}
+ 
+/*固定する背景*/
+.page {
+  box-sizing: border-box;
+  color: #FFF;
+  font-size: 5rem;
+  /* display: flex; */
+  /* align-items: center; */
+  justify-content: center;
+  height: 100%;
+  /* padding: 5%; */
+}
+.parallax-bg {
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+/*各背景の画像*/
+.img-bg-01 {
+  background-image: url(img/tools.jpg);
+  background-size: 100% 100%;
+}
+.img-bg-02 {
+  background-image: url(img/traditional.jpg);
+}
+.entire-gradation{
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+.upper-gradation{
+  height: 10%;
+  width: 100%;
+  background: linear-gradient(rgb(36, 36, 36),rgba(0, 0, 0, 0));
+}
+.lower-gradation{
+  height: 10%;
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0),rgba(36, 36, 36));
+}
+.page1-contents{
+  height: 80%;
+  width: 100%;
+}
+
+
+.page2-contents{
+  height: 100%;
+  width: 100%;
+  background: rgba(255, 242, 230, 0.534);
 }
