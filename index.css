@@ -124,7 +124,7 @@ html {
   /* display: flex; */
   /* align-items: center; */
   justify-content: center;
-  height: 100%;
+  height: 100vh;
   /* padding: 5%; */
 }
 .parallax-bg {
@@ -136,10 +136,11 @@ html {
 /*各背景の画像*/
 .img-bg-01 {
   background-image: url(img/tools.jpg);
-  background-size: 100% 100%;
+  background-size: 100% cover;
 }
 .img-bg-02 {
   background-image: url(img/traditional.jpg);
+  background-size: 100% cover;
 }
 .entire-gradation{
   height: 100%;
