@@ -243,14 +243,7 @@ html {
   padding-left: 8vw;
   font-size: 6vw;
   z-index: 2;
-}
-.location-logo-shadow{
-  position: absolute;
-  top: -5.5vh;
-
-  padding-left: 8.5vw;
-  font-size: 6vw;
-  color: black;
+  text-shadow: 4px 4px 2px black;
 }
 .map-container{
   text-align: center;
@@ -263,6 +256,7 @@ html {
 .profile{
   padding: 0px 8vw;
   margin-top: 3vh;
+  text-shadow:3px 3px 1px black;
 }
 .company-name{
   font-size: 5vw;
@@ -279,6 +273,7 @@ html {
   padding-left: 2vw;
 }
 .site-map{
+  text-shadow: 2px 2px 1px black;
   margin-top: 8vh;
   margin-right: 15vw;
   padding: 0px 8vw;
