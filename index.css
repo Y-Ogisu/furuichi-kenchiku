@@ -138,6 +138,27 @@ html {
   background-image: url(img/tools.jpg);
   background-size: 100% cover;
 }
+
+/* ///////////
+作業経過メモ
+
+[課題]
+スマホ閲覧時パララックスが表現されない。
+
+[恐らく原因とされるもの]
+background-attachment:fixed;
+background-size:cover;
+が効かない事。
+
+[以下行っている対処]
+それぞれ代替として疑似要素beforeの中に、
+position: fixed
+z-index: -1; 
+を記述する。しかしbeforeで記述しなおした
+背景画像が表示されない。
+
+//////////// */
+
 .img-bg-02 {
   background-image: url(img/traditional.jpg);
   background-size: 100% cover;
