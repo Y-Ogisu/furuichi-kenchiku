@@ -41,10 +41,10 @@ body::before{
     margin-bottom: 2vh ;
     margin-right: 3vw;
 }
-.scroll-button {
+#scroll-down {
 padding-top: 70px;
 }
-.scroll-button span {
+#scroll-down span {
 position: absolute;
 bottom: 13vh;
 left:12vw;

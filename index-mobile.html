@@ -3,35 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script> -->
   <link rel="stylesheet" href="index-mobile.css">
   <title>Document</title>
 
   <script type="text/javascript" src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
-  <!-- ＃リンクのスムーズスクロール -->
-  <script>
-    $(function(){
-      // #で始まるリンクをクリックしたら実行されます
-      $('a[href^="#"]').click(function() {
-        // スクロールの速度
-        var speed = 400; // ミリ秒で記述
-        var href= $(this).attr("href");
-        var target = $(href == "#" || href == "" ? 'html' : href);
-        var position = target.offset().top;
-        $('body,html').animate({scrollTop:position}, speed, 'swing');
-        return false;
-      });
-    });
-  </script>
+  
 </head>
 <body>
 
 <div class="title-logo-container">
 
-  <button id="button">移動する</button>
+  <!-- <button id="button">移動する</button> -->
   <img class="mobile-logo" src="img/title-logo-small3.png" alt="">
 </div>
-<a class="scroll-button" href="#"><span></span></a>
+<div id="scroll-down"><span></span></div>
+
 
 <!-- /*--- 1ページ目 ---*/ -->
 
@@ -111,9 +97,33 @@
 
 </body>
 
+<!-- <script>
+  $('#scroll-down').on('click', function(){
+    $(window).scrollTop(750);
+  });
+</script> -->
 <script>
-  $('#button').on('click', function(){
-    $(window).scrollTop(300);
+  $('#scroll-down').on('click', function(){
+    var speed = 400; // ミリ秒で記述
+    $('body,html').animate({scrollTop:760}, speed, 'swing');
+  });
+
+  
+</script>
+
+<!-- ＃リンクのスムーズスクロール -->
+<script>
+  $(function(){
+    // #で始まるリンクをクリックしたら実行されます
+    $('a[href^="#"]').click(function() {
+      // スクロールの速度
+      var speed = 400; // ミリ秒で記述
+      var href= $(this).attr("href");
+      var target = $(href == "#" || href == "" ? 'html' : href);
+      var position = target.offset().top;
+      $('body,html').animate({scrollTop:position}, speed, 'swing');
+      return false;
+    });
   });
 </script>
 
