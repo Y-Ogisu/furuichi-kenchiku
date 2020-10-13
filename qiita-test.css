@@ -5,64 +5,49 @@
     box-sizing: border-box;
     text-decoration: none;
 }
+body{
+  width: 100vw;
+}
 .img1{
     width: 100vw;
-}
-.img2{
-    width: 100vw;
-}
-.angle--bottom-left {
-    position: relative;
-    overflow: hidden;
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 15vw));
-            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 15vw));
-  }
-  
-  @supports not ((-webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 15vw))) or (clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 15vw)))) {
-    .angle--bottom-left::before, .angle--bottom-left::after {
-      content: "";
-      position: absolute;
-      left: 0;
-      z-index: 10;
-      display: block;
-      border-style: solid;
-    }
-    .angle--bottom-left::after {
-      bottom: 0;
-      border-width: 0 100vw 15vw 0;
-      border-color: transparent transparent #fff transparent;
-    }
-  }
-  
-  .angle--bottom-right {
-    position: relative;
-    overflow: hidden;
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10vw), 0 100%);
-            clip-path: polygon(0 0, 100% 0, 100% calc(100% - 15vw), 0 100%);
-  }
-  
-  @supports not ((-webkit-clip-path: polygon(0 0, 100% 0, 100% calc(100% - 15vw), 0 100%)) or (clip-path: polygon(0 0, 100% 0, 100% calc(100% - 15vw), 0 100%))) {
-    .angle--bottom-right::before, .angle--bottom-right::after {
-      content: "";
-      position: absolute;
-      left: 0;
-      z-index: 10;
-      display: block;
-      border-style: solid;
-    }
-    .angle--bottom-right::after {
-      bottom: 0;
-      border-width: 0 0 15vw 100vw;
-      border-color: transparent transparent #fff transparent;
-    }
-  }
-  
-
-  .lower{
-      position: relative;
+    height: 55vh;
+    object-fit: cover;
   }
   .img2{
-      position: absolute;
-      top: -60px;
-      z-index: -1;
+    width: 100vw;
+    height: 55vh;
+    object-fit: cover;
+}
+  
+.angle--bottom-right {
+position: relative;
+overflow: hidden;
+-webkit-clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10vw), 0 100%);
+        clip-path: polygon(0 0, 100% 0, 103% calc(100% - 20vw), -15% 100%);
+}
+
+@supports not ((-webkit-clip-path: polygon(0 0, 100% 0, 100% calc(100% - 15vw), 0 100%)) or (clip-path: polygon(0 0, 100% 0, 100% calc(100% - 15vw), 0 100%))) {
+  .angle--bottom-right::before, .angle--bottom-right::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    z-index: 10;
+    display: block;
+    border-style: solid;
   }
+  .angle--bottom-right::after {
+    bottom: 0;
+    border-width: 0 0 15vw 100vw;
+    border-color: transparent transparent #fff transparent;
+  }
+}
+  
+
+.lower{
+    position: relative;
+}
+.img2{
+    position: absolute;
+    top: -11vh;
+    z-index: -1;
+}
