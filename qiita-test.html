@@ -9,21 +9,20 @@
 </head>
 <body>
 
+<!-- メイン背景画像の記述 -->
 <div class="angle--bottom-right">
-  <img class="img1" src="img/modern.jpg" alt="">
-
+  <div class="upperImg"></div>
 </div>
 
 <div class="lower">
-    <img class="img2" src="img/traditional.jpg" alt="">
-
+  <div class="lowerImg"></div>
 </div>
 
+<!-- ページトップ -->
 <div class="title-logo-container">
-
-  <!-- <button id="button">移動する</button> -->
   <img class="mobile-logo" src="img/title-logo-small3.png" alt="">
 </div>
+
 <div id="scroll-down"><span></span></div>
 
 
@@ -106,19 +105,14 @@
 
 </body>
 
-<!-- <script>
-  $('#scroll-down').on('click', function(){
-    $(window).scrollTop(750);
-  });
-</script> -->
 <script>
   $('#scroll-down').click(function() {
     var speed = 400; // ミリ秒で記述
     $('body,html').animate({scrollTop:760}, speed, 'swing');
   });
-
-  
 </script>
+
+
 
 <!-- ＃リンクのスムーズスクロール -->
 <script>
@@ -135,5 +129,32 @@
     });
   });
 </script>
+
+
+
+<!-- 背景画像遷移の記述 -->
+<!-- bg-slider -->
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.bgswitcher.js"></script>
+
+<script>
+  jQuery(function($) {
+      $('.upperImg').bgSwitcher({
+          images: ['img/modern.jpg','img/modern2.jpg','img/modern3.jpg'], // 切替背景画像を指定
+    interval: 3800, // 背景画像を切り替える間隔を指定 3000=3秒
+          loop: true, // 切り替えを繰り返すか指定 true=繰り返す　false=繰り返さない
+          shuffle: false, // 背景画像の順番をシャッフルするか指定 true=する　false=しない
+          effect: "fade", // エフェクトの種類をfade,blind,clip,slide,drop,hideから指定
+          duration: 800, // エフェクトの時間を指定します。
+          easing: "swing" // エフェクトのイージングをlinear,swingから指定
+      });
+  });
+  jQuery(function($) {
+      $('.lowerImg').bgSwitcher({
+          images: ['img/traditional.jpg','img/traditional2.jpg','img/traditional3.jpg'],
+    interval: 4200,
+      });
+  });
+  </script>
 
 </html>
