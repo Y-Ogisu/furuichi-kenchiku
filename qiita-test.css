@@ -17,10 +17,10 @@ body{
 }
 .img2{
   width: 100vw;
-  height: 55vh;
+  height: 60vh;
   object-fit: cover;
   position: fixed;
-  top: 45vh;
+  top: 40vh;
   z-index: -3;
 }
   
