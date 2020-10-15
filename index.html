@@ -118,6 +118,7 @@ viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
 
 </body>
 
+<!-- --下へボタンのJS-- -->
 <script>
   $('#scroll-down').click(function() {
     var speed = 400; // ミリ秒で記述
@@ -125,21 +126,6 @@ viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
   });
 </script>
 
-<!-- ----fadeinの制御---- -->
-<script>
-$(function(){
-	$(window).scroll(function (){
-		$('.fadein').each(function(){
-			var elemPos = $(this).offset().top;
-			var scroll = $(window).scrollTop();
-			var windowHeight = $(window).height();
-			if (scroll > elemPos - windowHeight + 100){
-				$(this).addClass('scrollin');
-			}
-		});
-	});
-});
-</script>
 
 <!-- ＃リンクのスムーズスクロール -->
 <script>
@@ -157,6 +143,22 @@ $(function(){
   });
 </script>
 
+
+<!-- ----fadeinの制御---- -->
+<script>
+  $(function(){
+    $(window).scroll(function (){
+      $('.fadein').each(function(){
+        var elemPos = $(this).offset().top;
+        var scroll = $(window).scrollTop();
+        var windowHeight = $(window).height();
+        if (scroll > elemPos - windowHeight + 100){
+          $(this).addClass('scrollin');
+        }
+      });
+    });
+  });
+  </script>
 
 
 <!-- 背景画像遷移の記述 -->
