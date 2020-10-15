@@ -287,9 +287,9 @@ padding-left: 2vw;
 text-align: center;
 }
 .map{
-width: 70vw;
-height: 70vw;
-box-shadow:10px 10px black;
+width: 80vw;
+height: 77vw;
+box-shadow:10px 10px rgb(22, 22, 22);
 }
 
 .site-map{
