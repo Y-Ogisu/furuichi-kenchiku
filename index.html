@@ -126,13 +126,13 @@ viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
 
 <!-- ----fadeinの制御---- -->
 <script>
-  $(function(){
+$(function(){
 	$(window).scroll(function (){
 		$('.fadein').each(function(){
 			var elemPos = $(this).offset().top;
 			var scroll = $(window).scrollTop();
 			var windowHeight = $(window).height();
-			if (scroll > elemPos - windowHeight + 200){
+			if (scroll > elemPos - windowHeight + 100){
 				$(this).addClass('scrollin');
 			}
 		});
