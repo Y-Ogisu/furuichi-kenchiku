@@ -1,120 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="index.css">
-  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
-  <title>古市建築</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>(有)古市建築</title>
+    <link rel="stylesheet" href="index.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
 </head>
 <body>
 
-  <div class="main-wrapper">
+<!-- メイン背景画像の記述 -->
+<div class="angle--bottom-right">
+  <div class="upperImg"></div>
+</div>
 
-    <div class="title-container">
-      <img class="pc-logo" src="img/title-logo.png" alt="">
-      <img class="mobile-logo" src="img/title-logo-small3.png" alt="">
+<div class="lower">
+  <div class="lowerImg"></div>
+</div>
 
-      <a class="scroll-button" href="#"><span></span></a>
-    </div>
+<!-- ページトップ -->
+<div class="title-logo-container">
+  <img class="mobile-logo" src="img/title-logo-small3.png" alt="">
+</div>
 
-  </div>
+<div id="scroll-down"><span></span></div>
 
-  <div class="parallax-bg img-bg-01 page">
-    <div class="entire-gradation">
-      <div class="upper-gradation"></div>
-      <div class="page-contents">
-        <a href="test.html" class="page1-content about-service">業務案内</a>
-        <a href="index-mobile.html" class="page1-content order-flow">ご依頼の流れ</a>
-        <a href="index.html" class="page1-content-about">会社概要</a>
-        <a href="qiita-test.html" class="page1-content-contact">お問い合わせ</a>
 
-      </div>
-      <div class="lower-gradation"></div>
-
-    </div>
+<!-- /*--- 1ページ目 ---*/ -->  
+    
+<div class="page1 fadein">
+  <a href="test.html" class="page1-content about-service">業務案内</a>
+  <a href="" class="page1-content order-flow">ご依頼の流れ</a>
+  <a href="index.html" class="page1-content-about">会社概要</a>
+  <a href="" class="page1-content-contact">お問い合わせ</a>
+</div>
+  
+<!-- /*--- 2ページ目 ---*/ -->
+<div class="page2 blurBg fadein">
+  <h1 class="info-logo">新着情報</h1>
+  <ul>
+    <li class="info-list">
+      <div class="info-date">2020/9/30</div>
+      <div class="info-text">新着情報を表示します。新着情報を表示します。</div>
+    </li>
+    <li class="info-list">
+      <div class="info-date">2020/9/30</div>
+      <div class="info-text">新着情報を表示します。新着情報を表示します。新着情報を表示します。</div>
+    </li>
+    <li class="info-list">
+      <div class="info-date">2020/9/30</div>
+      <div class="info-text">新着情報を表示します。</div>
+    </li>
+    <li class="info-list">
+      <div class="info-date">2020/9/30</div>
+      <div class="info-text">新着情報を表示します。新着情報を表示します。新着情報を表示します。新着情報を表示します。</div>
+    </li>
+  </ul>
+</div>
+  
+<!--Waves Container-->
+<div class="waves-container">
+<svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+<defs>
+<path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+</defs>
+<g class="parallax">
+<use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(41, 35, 27, 0.3)" />
+<use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(41, 35, 27, 0.5)" />
+<use xlink:href="#gentle-wave" x="48" y="7" fill="rgba(41, 35, 27, 0.75)" />
+</g>
+</svg>
+</div>
+<!--Waves end-->
+  
+<!----- フッター ------>
+<div class="footer">
+  <div class="profile">
+    <h1 class="company-name">有限会社 古市建築</h1>
+    <p class="phone-number"><i class="fas fa-phone-volume"></i>059-365-5692</p>
+    <p class="address">〒510-8034 三重県四日市市大矢知町1179-2</p>
   </div>
   
-  <div class="parallax-bg img-bg-02 page">
+  <div class="location">
+    <div class="map-container">
+    <img src="img/furuichi-kenchiku-map2.png" alt="" class="map">
+    </div>
+  </div>
+
+  <div class="site-map">
+    <div class="site-map-content">
+      <a href="" class="site-map-service">業務案内</a>
+      <a href="" class="construction-example">施工例</a>
+      <div class="site-map-decoration"></div>
+    </div>
+
+    <div class="site-map-content">
+      <a href="test.html" class="site-map-about">会社概要</a>
+    </div>
     
-    <div class="entire-gradation">
-      <div class="upper-gradation"></div>
-      <div class="page-contents">
-        <h1 class="info-logo">新着情報</h1>
-        <ul>
-          <li class="info-list">
-            <div class="info-date">2020/9/30</div>
-            <div class="info-text">新着情報を表示します。新着情報を表示します。</div>
-          </li>
-          <li class="info-list">
-            <div class="info-date">2020/9/30</div>
-            <div class="info-text">新着情報を表示します。新着情報を表示します。新着情報を表示します。</div>
-          </li>
-          <li class="info-list">
-            <div class="info-date">2020/9/30</div>
-            <div class="info-text">新着情報を表示します。</div>
-          </li>
-          <li class="info-list">
-            <div class="info-date">2020/9/30</div>
-            <div class="info-text">新着情報を表示します。新着情報を表示します。新着情報を表示します。新着情報を表示します。</div>
-          </li>
-        </ul>
-      </div>
-      <div class="lower-gradation"></div>
+    
+    <div class="site-map-content">
+      <a href="" class="site-map-order-flow">ご依頼の流れ</a>
     </div>
-
-  </div>
-  <div class="parallax-bg img-bg-03 page">
-
-    <div class="entire-gradation">
-      <div class="more-gradation">
-        <div class="upper-gradation"></div>
-
-        <div class="page-contents">
-          <div class="location">
-            <h1 class="location-logo">所在地</h1>
-            <div class="map-container">
-              <img src="img/furuichi-kenchiku-map2.png" alt="" class="map">
-            </div>
-          </div>
-
-          <div class="profile">
-            <h1 class="company-name">有限会社 古市建築</h1>
-            <p class="phone-number"><i class="fas fa-phone-volume"></i>059-365-5692</p>
-            <p class="address">〒510-8034 三重県四日市市大矢知町1179-2</p>
-          </div>
-
-          <div class="site-map">
-            <div class="site-map-content">
-              <a href="" class="site-map-service">業務案内</a>
-              <a href="" class="construction-example">施工例</a>
-              <div class="site-map-decoration"></div>
-            </div>
-
-            <div class="site-map-content">
-              <a href="test.html" class="site-map-about">会社概要</a>
-            </div>
-            
-            
-            <div class="site-map-content">
-              <a href="" class="site-map-order-flow">ご依頼の流れ</a>
-            </div>
-            
-            <div class="site-map-content">
-              <a href="" class="site-map-contact">お問い合わせ</a>
-            </div>
-            
-          </div>
-
-        </div>
-
-        <div class="lower-gradation">
-          <div class="copyright">Copyright 2020 Y-Ogisu all rights reserved.</div>
-        </div>
-      </div>
+    
+    <div class="site-map-content">
+      <a href="" class="site-map-contact">お問い合わせ</a>
     </div>
-
+    
   </div>
+
+  <a href="#" class="scroll-top"><span></span>トップへ</a>
+  <div class="copyright">Copyright 2020 Y-Ogisu all rights reserved.</div>
+
+</div>
 
 </body>
+
+<script>
+  $('#scroll-down').click(function() {
+    var speed = 400; // ミリ秒で記述
+    $('body,html').animate({scrollTop:760}, speed, 'swing');
+  });
+</script>
+
+<!-- ----fadeinの制御---- -->
+<script>
+  $(function(){
+	$(window).scroll(function (){
+		$('.fadein').each(function(){
+			var elemPos = $(this).offset().top;
+			var scroll = $(window).scrollTop();
+			var windowHeight = $(window).height();
+			if (scroll > elemPos - windowHeight + 200){
+				$(this).addClass('scrollin');
+			}
+		});
+	});
+});
+</script>
+
+<!-- ＃リンクのスムーズスクロール -->
+<script>
+  $(function(){
+    // #で始まるリンクをクリックしたら実行されます
+    $('a[href^="#"]').click(function() {
+      // スクロールの速度
+      var speed = 400; // ミリ秒で記述
+      var href= $(this).attr("href");
+      var target = $(href == "#" || href == "" ? 'html' : href);
+      var position = target.offset().top;
+      $('body,html').animate({scrollTop:position}, speed, 'swing');
+      return false;
+    });
+  });
+</script>
+
+
+
+<!-- 背景画像遷移の記述 -->
+<!-- bg-slider -->
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.bgswitcher.js"></script>
+
+<script>
+  jQuery(function($) {
+      $('.upperImg').bgSwitcher({
+          images: ['img/modern.jpg','img/modern2.jpg','img/modern3.jpg'], // 切替背景画像を指定
+    interval: 3800, // 背景画像を切り替える間隔を指定 3000=3秒
+          loop: true, // 切り替えを繰り返すか指定 true=繰り返す　false=繰り返さない
+          shuffle: false, // 背景画像の順番をシャッフルするか指定 true=する　false=しない
+          effect: "fade", // エフェクトの種類をfade,blind,clip,slide,drop,hideから指定
+          duration: 800, // エフェクトの時間を指定します。
+          easing: "swing" // エフェクトのイージングをlinear,swingから指定
+      });
+  });
+  jQuery(function($) {
+      $('.lowerImg').bgSwitcher({
+          images: ['img/traditional.jpg','img/traditional2.jpg','img/traditional3.jpg'],
+    interval: 4200,
+      });
+  });
+  </script>
+
 </html>
