@@ -412,9 +412,10 @@ color: white;
 background-color: rgba(0, 0, 0, 0.795);
 width: 100vw;
 text-align: center;
-/* position: absolute; */
+position: absolute;
+bottom: -2px;
 font-size: 2vw;
-/* bottom: 0px; */
+padding-bottom: 2px;
 }
 
 /* ----fadeinのアニメーション----- */
