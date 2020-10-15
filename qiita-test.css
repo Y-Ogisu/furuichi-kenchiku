@@ -209,6 +209,9 @@ font-size: 6vw;
 }
 
 /* waveのcss */
+.waves-container{
+  padding-bottom: 2px;/* 下コンテンツとの重なり解消 */
+}
 .waves {
   position:relative;
   width: 100%;
