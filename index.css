@@ -413,9 +413,9 @@ background-color: rgba(0, 0, 0, 0.795);
 width: 100vw;
 text-align: center;
 position: absolute;
-bottom: -2px;
+bottom: -4px;
 font-size: 2vw;
-padding-bottom: 2px;
+padding-bottom: 5px;
 }
 
 /* ----fadeinのアニメーション----- */
