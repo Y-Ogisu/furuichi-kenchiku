@@ -28,7 +28,7 @@
 
 <!-- /*--- 1ページ目 ---*/ -->  
     
-<div class="page1">
+<div class="page1 fadein">
   <a href="test.html" class="page1-content about-service">業務案内</a>
   <a href="" class="page1-content order-flow">ご依頼の流れ</a>
   <a href="index.html" class="page1-content-about">会社概要</a>
@@ -36,7 +36,7 @@
 </div>
   
 <!-- /*--- 2ページ目 ---*/ -->
-<div class="page2 blurBg">
+<div class="page2 blurBg fadein">
   <h1 class="info-logo">新着情報</h1>
   <ul>
     <li class="info-list">
@@ -124,7 +124,21 @@ viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
   });
 </script>
 
-
+<!-- ----fadeinの制御---- -->
+<script>
+  $(function(){
+	$(window).scroll(function (){
+		$('.fadein').each(function(){
+			var elemPos = $(this).offset().top;
+			var scroll = $(window).scrollTop();
+			var windowHeight = $(window).height();
+			if (scroll > elemPos - windowHeight + 200){
+				$(this).addClass('scrollin');
+			}
+		});
+	});
+});
+</script>
 
 <!-- ＃リンクのスムーズスクロール -->
 <script>
