@@ -232,7 +232,7 @@ font-size: 6vw;
 
 /* waveのcss */
 .waves-container{
-  padding-bottom: 1px;/* 下コンテンツとの重なり解消 */
+  padding-bottom: 0px;/* 下コンテンツとの重なり解消 */
 }
 .waves {
   position:relative;
