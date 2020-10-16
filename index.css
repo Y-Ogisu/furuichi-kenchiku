@@ -10,7 +10,7 @@ width: 100vw;
 }
 .upperImg{
 width: 100vw;
-height: 55vh;
+height: 50vh;
 z-index: -2;
 background-position:center center;
 background-size: cover;
@@ -24,10 +24,10 @@ z-index: -3;
 }
 .lowerImg{
 width: 100vw;
-height: 60vh;
+height: 65vh;
 object-fit: cover;
 position: fixed;
-top: 40vh;
+top: 35vh;
 background-position:center center;
 background-size: cover;
 display: flex;
@@ -78,7 +78,7 @@ vertical-align: bottom;
 position: relative;
 }
 .mobile-logo{
-width: 70vw;
+width: 55vw;
 position: absolute;
 bottom: 13vh;
 right: 0vw;
