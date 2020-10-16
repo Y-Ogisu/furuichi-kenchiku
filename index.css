@@ -232,7 +232,7 @@ font-size: 6vw;
 
 /* waveのcss */
 .waves-container{
-  padding-bottom: 0px;/* 下コンテンツとの重なり解消 */
+  padding-bottom: 1px;/* 下コンテンツとの重なり解消 */
 }
 .waves {
   position:relative;
@@ -289,21 +289,21 @@ background-color: rgba(41, 20, 8, 0.9);
 .profile{
 padding: 3vh 8vw;
 text-shadow:3px 3px 1px black;
-font-family: serif;
 }
 .company-name{
   font-size: 5vw;
-  font-family: cursive;
 }
 .phone-number{
-font-size: 3.5vw;
-padding-left: 2vw;
+  font-family: serif;
+  font-size: 3.5vw;
+  padding-left: 2vw;
 }
 .fa-phone-volume{
-margin-right: 0.5vw;
+  margin-right: 0.5vw;
 }
 .address{
-font-size: 3.2vw;
+  font-family: serif;
+  font-size: 3.2vw;
 padding-left: 2vw;
 }
 .map-container{
