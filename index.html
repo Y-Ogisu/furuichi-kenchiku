@@ -29,10 +29,37 @@
 <!-- /*--- 1ページ目 ---*/ -->  
     
 <div class="page1 fadein">
-  <a href="test.html" class="page1-content about-service">業務案内</a>
-  <a href="" class="page1-content order-flow">ご依頼の流れ</a>
-  <a href="index.html" class="page1-content-about">会社概要</a>
-  <a href="" class="page1-content-contact">お問い合わせ</a>
+  <div class="copy">ここにキャッチコピーを<br>書きます...</div>
+  
+  <a class="page1-content about-service slide-down" data-slide="slide-1"><span class="Text-Span JS_ScrollAnimationItem" >業務案内　　　</span></a>
+  <div class="slide-1">
+    <ul>
+      <li>業務：案内を書きます。</li>
+      <div class="gallery-1">施工例</div>
+      <li>業務：案内を書きます。</li>
+      <li>業務：案内を書きます。</li>
+    </ul>
+  </div>
+
+  <a class="page1-content order-flow slide-down" data-slide="slide-2"><span class="Text-Span JS_ScrollAnimationItem">ご依頼の流れ　</span></a>
+  <div class="slide-2">
+    <ul>
+      <li>依頼の流れを書きます。</li>
+      <p>↓</p>
+      <li>依頼の流れを書きます。</li>
+      <p>↓</p>
+      <li>依頼の流れを書きます。</li>
+      <p>↓</p>
+      <li>依頼の流れを書きます。</li>
+    </ul>
+  </div>
+
+  <div class="page1-bottom">
+    <a href="index.html" class="page1-content-about">会社概要</a>
+    <a href="" class="page1-content-contact">お問い合わせ</a>
+
+  </div>
+
 </div>
   
 <!-- /*--- 2ページ目 ---*/ -->
@@ -66,9 +93,9 @@ viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
 <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
 </defs>
 <g class="parallax">
-<use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(12, 41, 26, 0.3)" />
-<use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(12, 41, 26, 0.5)" />
-<use xlink:href="#gentle-wave" x="48" y="7" fill="rgba(12, 41, 26, 0.72)" />
+<use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(41, 20, 8, 0.3)" />
+<use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(41, 20, 8, 0.5)" />
+<use xlink:href="#gentle-wave" x="48" y="7" fill="rgba(41, 20, 8, 0.72)" />
 </g>
 </svg>
 </div>
@@ -160,6 +187,21 @@ viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
   });
   </script>
 
+<!-- ---下線アニメーション--- -->
+<script>
+$(window).on('scroll',function(){
+  $(".JS_ScrollAnimationItem").each(function(){
+    var position = $(this).offset().top;
+    var scroll = $(window).scrollTop();
+    var windowHeight = $(window).height();
+    if (scroll > position - windowHeight+160){
+      $(this).addClass('isActive');
+    }
+  });
+});
+</script>
+
+
 
 <!-- 背景画像遷移の記述 -->
 <!-- bg-slider -->
@@ -185,5 +227,9 @@ viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
       });
   });
   </script>
+
+<!-- ---slideDownの記述--- -->
+<link rel="stylesheet" href="slide-down.css" />
+<script src="js/slide-down.js"></script>
 
 </html>

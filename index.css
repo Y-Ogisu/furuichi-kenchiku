@@ -4,6 +4,7 @@
   font-family: cursive;
   box-sizing: border-box;
   text-decoration: none;
+  list-style: none;
 }
 body{
 width: 100vw;
@@ -132,12 +133,17 @@ opacity: 0;
 
 /* 1ページ目のCSS */
 .page1{
-height: 80vh;
 width: 90vw;
 margin: 7vh auto 3vh auto;
 position: relative;
 background-color: rgba(250, 235, 215, 0.459);
 text-shadow: 2px 2px 2px  rgba(0, 0, 0, 0.507);
+}
+.copy{
+  padding: 4vh;
+  font-size: 5vw;
+  text-align: center;
+  color: #fff;
 }
 .page1-content{
 display: inline-block;
@@ -146,8 +152,26 @@ font-size: 11vw;
 font-weight: bold;
 color:  rgb(29, 75, 61);
 padding-left: 4vw;
-padding-top: 1vh;
-margin-bottom: 20px;
+padding-top: 3vh;
+}
+.slide-1{
+  margin: 3vh 10vw;
+}
+.gallery-1{
+  margin: 2vh auto;
+  text-align: center;
+  display: block;
+  width: 55vw;
+  height: 50vw;
+  background-color: rgba(87, 41, 11, 0.514);
+}
+.slide-2{
+  text-align: center;
+  margin: 5vw;
+}
+.page1-bottom{
+padding-right: 8vw;
+padding-top: 6vh;
 }
 .page1-content-about{
 display: inline-block;
@@ -155,11 +179,10 @@ width: 100%;
 color: rgb(29, 75, 61);
 font-size: 7vw;
 font-weight: bold;
-padding-right: 8vw;
 margin-bottom: 20px;
-position: absolute;
-bottom: 10vh;
-right: 0;
+/* position: absolute; */
+/* bottom: 10vh; */
+/* right: 0; */
 text-align: right;
 }
 .page1-content-contact{
@@ -168,24 +191,23 @@ text-align: right;
   color: rgb(29, 75, 61);
   font-size: 7vw;
 font-weight: bold;
-padding-right: 8vw;
 margin-bottom: 20px;
-position: absolute;
-bottom: 0;
-right: 0;
+/* position: absolute; */
+/* bottom: 0; */
+/* right: 0; */
 text-align: right;
 }
 
 /*--- 2ページ目のCSS ---*/
 
 .page2{
-color: rgb(29, 75, 61);
+color: rgb(255, 255, 255);
 width: 90vw;
-margin: 6vh auto;
+margin: 12vh auto;
 position: relative;
 background-size: auto 100%;
 background-color: rgba(250, 235, 215, 0.459);
-text-shadow: 2px 2px 2px  rgba(0, 0, 0, 0.562);
+text-shadow: 2px 2px 2px  rgba(0, 0, 0, 0.712);
 }
 .page-contents ul{
 position: absolute;
@@ -262,14 +284,16 @@ color: rgb(255, 255, 255);
 width: 100vw;
 position: relative;
 background-size: auto 100%;
-background-color: rgba(12, 41, 26, 0.9);
+background-color: rgba(41, 20, 8, 0.9);
 }
 .profile{
 padding: 3vh 8vw;
 text-shadow:3px 3px 1px black;
+font-family: serif;
 }
 .company-name{
-font-size: 5vw;
+  font-size: 5vw;
+  font-family: cursive;
 }
 .phone-number{
 font-size: 3.5vw;
@@ -406,6 +430,7 @@ box-sizing: border-box;
 }
 
 .copyright{
+font-family: serif;
 color: white;
 background-color: rgba(0, 0, 0, 0.795);
 width: 100vw;
@@ -419,13 +444,35 @@ font-size: 2vw;
 /* ----fadeinのアニメーション----- */
 /* 画面外にいる状態 */
 .fadein {
-opacity : 0.1;
+width: 85vw;
+opacity : 0;
 transform : translate(0, 50px);
 transition : all 500ms;
 }
 
 /* 画面内に入った状態 */
 .fadein.scrollin {
+width: 90vw;
 opacity : 1;
 transform : translate(0, 0);
+}
+
+/* --下線アニメーション-- */
+.Text-Span {
+  position: relative;
+  z-index: 1;
+}
+.Text-Span:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -0.5vh;
+  width: 0%;
+  height: 4px;
+  background: #5e7c62;
+  z-index: -1;
+  transition: all 0.8s;
+}
+.Text-Span.isActive:after {
+  width: 100%;
 }
