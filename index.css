@@ -137,7 +137,6 @@ width: 90vw;
 margin: 7vh auto 3vh auto;
 position: relative;
 background-color: rgba(250, 235, 215, 0.459);
-border-radius: 15px;
 text-shadow: 2px 2px 2px  rgba(0, 0, 0, 0.507);
 }
 .page1-content{
@@ -263,7 +262,7 @@ color: rgb(255, 255, 255);
 width: 100vw;
 position: relative;
 background-size: auto 100%;
-background-color: rgba(41, 35, 27, 0.9);
+background-color: rgba(12, 41, 26, 0.9);
 }
 .profile{
 padding: 3vh 8vw;
